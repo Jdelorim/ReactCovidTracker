@@ -16,7 +16,7 @@ const Cards = ({data: { confirmed, recovered, deaths, lastUpdate }}) => {
                     <CardContent>
                         <Typography color="textSecondary" gutterBottom>Infected</Typography>
                         <Typography varaint="h5">
-                            <CountUp start={0} end={confirmed.value} duration={2.5} seperator="," />
+                            <CountUp start={0} end={confirmed.value} duration={2.5} separator="," />
                         </Typography>
                         <Typography color="textSecondary">{new Date(lastUpdate).toDateString()}</Typography>
                         <Typography varaint="body2">Number of Active cases of COVID-19</Typography>
@@ -26,7 +26,7 @@ const Cards = ({data: { confirmed, recovered, deaths, lastUpdate }}) => {
                     <CardContent>
                         <Typography color="textSecondary" gutterBottom>Recovered</Typography>
                         <Typography varaint="h5">
-                            <CountUp start={0} end={recovered.value} duration={2.5} seperator="," />
+                            <CountUp start={0} end={recovered.value} duration={2.5} separator="," />
                         </Typography>
                         <Typography color="textSecondary">{new Date(lastUpdate).toDateString()}</Typography>
                         <Typography varaint="body2">Number of recoveries cases of COVID-19</Typography>
@@ -36,7 +36,7 @@ const Cards = ({data: { confirmed, recovered, deaths, lastUpdate }}) => {
                     <CardContent>
                         <Typography color="textSecondary" gutterBottom>Deaths</Typography>
                         <Typography varaint="h5">
-                            <CountUp start={0} end={deaths.value} duration={2.5} seperator="," />
+                            <CountUp start={0} end={deaths.value} duration={2.5} separator="," />
                         </Typography>
                         <Typography color="textSecondary">{new Date(lastUpdate).toDateString()}</Typography>
                         <Typography varaint="body2">Number of Deaths cases of COVID-19</Typography>
